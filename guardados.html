@@ -8,27 +8,30 @@
         rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous"/>
-
+        
     <link rel="stylesheet" href="./estilos/style.css">
     <title>PP2025331-VazquezSoto-Luz</title>
 </head>
 <body>
     <main class="m-2">
         <header>
-            <h1>Inicio</h1>
+            <h1>Series Guardadas</h1>
         </header>
         <nav id="panel-izquierda">
             <a href="./index.html">Inicio</a>
-            <a id="guardadas" href="./guardados.html">Guardados</a>
+            <a href="./guardados.html">Guardados</a>
         </nav>
+        <div id="orndenamientos">
+            <button id="ordenar-nombre">Ordenar por Nombre</button>
+            <button id="ordenar-lenguaje">Ordenar por Lenguaje</button
+        </div>
         <section id="principal">
-            <div id="series">
-            <!-- Aquí se deben mostrar las series / peliculas -->
+            <div id="mostrarGuardadas">
+            <!-- Aquí se deben mostrar las series / peliculas guardadas -->
             </div>
-        <button id="anterior">Página anterior</button>
-        <button id="siguiente">Página siguiente</button>
         </section>
     </main>
     <script type="module" src="./main.js"></script>
 </body>
 </html>
+
