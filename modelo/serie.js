@@ -36,14 +36,15 @@ export class Serie{
             <p><strong>Géneros:</strong> ${this.genres.join(", ")}</p>
             <img src="${this.image}" alt="${this.name}" style="cursor:pointer" />
             <br>
-            <button class="btn-guardar">Guardar</button>
+            <button class="btn-guardar-serie" id="guardar">Guardar</button>
+
         `;
 
         card.querySelector("img").addEventListener("click", () => {
             window.open(this.url, "_blank");
         });
 
-        card.querySelector(".btn-guardar").addEventListener("click", () => {
+        card.querySelector(".btn-guardar-serie").addEventListener("click", () => {
             Serie.guardarSerie(this);
             alert("Serie guardada correctamente.");
         });
@@ -56,6 +57,7 @@ export class Serie{
         let guardadas = JSON.parse(localStorage.getItem("seriesGuardadas")) || [];
         guardadas.push(serie);
         localStorage.setItem("seriesGuardadas", JSON.stringify(guardadas));
+        console.log(guardadas)
     }
 
 }

@@ -29,7 +29,7 @@ nav {
     grid-row: 2;
 }
 
-#series {
+#series, #mostrarGuardadas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -42,12 +42,18 @@ nav {
     border-radius: 10px;
     padding: 10px;
     background: #056b63;
-    box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 2px 5px rgba(0.2,0.2,0.2,0.4);
 }
 
 .serie-card img {
     width: 100%;
     border-radius: 5px;
+}
+
+.button, .btnGuardar , .btn-guardar-serie{
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(126, 126, 126);
 }
 
 @media screen and (max-width: 900px) {
